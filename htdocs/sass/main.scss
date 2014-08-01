@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/**
+ * Project                            : Pagu
+ * Type                               : Website
+ * CSS preprocessor                   : SASS
+ * CSS architecture                   : SMACSS, MVCSS, OOCSS
+ * CSS authoring frameworks           : Compass, Sukiyaki
+ * CSS resets, normalize              : Reset.css, Normalize.css
+ * JS features detection              : Modernizr
+ * Front-end template                 : Onigiri
+ * Layouts                            : Responsive Web Design
+ * Design approach                    : Mobile first
+ * Media                              : Desktops, tablets, mobiles
+ * Pixel density                      : 1-2 dppx
+ * Section                            : Main styles
+ * Developers                         : Your name
+ */
+
+// -----------------------------------------------------------------------------
+// CSS AUTHORING FRAMEWORKS
+// Streamlines development by providing a number of utilities and tools
+// to make writing CSS files easier and faster.
+
+@import "imports";                    // Import configuration settings
+
+@import "compass";                    // Core framework
+
+@import "vendor/sukiyaki";            // Function and mixin library
+// -----------------------------------------------------------------------------
+// CORE
+
+@import "core/reset";                 // Reset
+@import "core/settings";              // Settings
+@import "core/helpers";               // Helpers
+@import "core/base";                  // Base-level styles
+@import "core/content";               // Content
+@import "core/layout";                // Layout
+// -----------------------------------------------------------------------------
+// MODULES
+
+@import "modules/modules";            // Modules
+@import "modules/widgets";            // Widgets
+@import "modules/components";         // Components
+// -----------------------------------------------------------------------------
+// PAGES
+
+@import "pages/master";               // Master template
+// -----------------------------------------------------------------------------
+// QUICK STYLES
+
+@import "inbox";                      // Inbox

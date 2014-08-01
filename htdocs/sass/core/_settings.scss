@@ -1,0 +1,106 @@
+// SETTINGS
+// Grouping all the app-wide settings into one file allows newcomers to
+// the project the means to find out what's available to them quickly.
+// -----------------------------------------------------------------------------
+// Fonts
+
+// Regular
+@include font-face(
+  "Font-Regular",
+  font-files("Font-Regular.ttf")
+);
+
+// Bold
+@include font-face(
+  "Font-Bold",
+  font-files("Font-Bold.ttf")
+);
+
+// Italic
+@include font-face(
+  "Font-Italic",
+  font-files("Font-Italic.ttf")
+);
+// -----------------------------------------------------------------------------
+// Configurable variables
+// Declar variables that can beused throughout stylesheets.
+// -----------------------------------------------------------------------------
+// Fonts
+$font-style-regular     : Font-Regular;
+$font-style-bold        : Font-Bold;
+$font-style-light       : Font-Light;
+$font-style-italic      : Font-Italic;
+
+$font-style-base        : $font-style-regular;
+$font-size-base         : 16px;
+
+
+// Line-height
+$line-height-base       : 20px;
+
+
+// Grid
+$grid-width-base        : 1280px;
+$grid-width-tablet      : 1024px;
+$grid-padding-base      : 20px;
+$grid-padding-tablet    : 15px;
+$grid-gutter-base       : 40px;
+$grid-gutter-tablet     : 30px;
+$grid-column-base       : 6;
+$grid-column-tablet     : 6;
+$grid-breakpoint-desktop: 1280px;
+$grid-breakpoint-tablet : 1279px;
+
+
+// Colors
+$color-base             : #666;
+$color-light            : #999;
+$color-bright           : #fff;
+$color-primary          : #000;
+$color-highlight        : #bbb;
+$color-selection        : #b3d4fc;
+
+
+// Backgrounds
+$bkg-color-base         : #fff;
+$bkg-color-primary      : #000;
+$bkg-color-highlight    : #bbb;
+
+
+// Links
+$link-color-normal      : #fff;
+$link-color-hover       : #fff;
+$link-color-active      : #fff;
+$link-bkg-normal        : #fff;
+$link-bkg-hover         : #fff;
+$link-bkg-active        : #fff;
+
+
+// Path
+$path-vendor            : "vendor/";
+
+
+// Devices
+$device-mouse           : ".no-touch &";
+$device-touch           : ".touch &";
+
+
+// OS
+$os-mac                 : ".OS-Mac &";
+$os-windows             : ".OS-Windows &";
+
+
+// Browsers
+$browser-chrome         : ".Browser-Chrome &";
+$browser-safari         : ".Browser-Safari &";
+$browser-firefox        : ".Browser-Firefox &";
+$browser-ie             : ".Browser-IE &";
+$browser-ie-08          : ".MSIE-8 &";
+$browser-ie-09          : ".MSIE-9 &";
+$browser-ie-10          : ".MSIE-10 &";
+$browser-ie-11          : ".MSIE-11 &";
+$browser-legacy         : ".MSIE-8 &";
+
+
+// Ratios
+$ratio-retina           : 2;

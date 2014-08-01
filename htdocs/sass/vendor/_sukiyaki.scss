@@ -1,0 +1,102 @@
+// Sukiyaki
+// A simple and lightweight mixin library for SASS.
+// https://github.com/ahomiya/sukiyaki
+// -----------------------------------------------------------------------------
+
+// Extract
+// Convert 1-3 dimensions to the 4-value syntax
+@function extract($shorthand) {
+  @if length($shorthand) == 1 {
+    @return nth($shorthand, 1) nth($shorthand, 1) nth($shorthand, 1) nth($shorthand, 1);
+  }
+  @else if length($shorthand) == 2 {
+    @return nth($shorthand, 1) nth($shorthand, 2) nth($shorthand, 1) nth($shorthand, 2);
+  }
+  @else if length($shorthand) == 3 {
+    @return nth($shorthand, 1) nth($shorthand, 2) nth($shorthand, 3) nth($shorthand, 2);
+  }
+  @else {
+    @return $shorthand;
+  }
+}
+// -----------------------------------------------------------------------------
+// Micro clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+// -----------------------------------------------------------------------------
+// Fit container
+@mixin fit($dimension: block, $size: 100%, $block: true) {
+  @if ($block) {
+    display: block;
+  }
+
+  @if ($dimension == block) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @if ($dimension == height) {
+    height: $size;
+    line-height: $size;
+  }
+}
+// -----------------------------------------------------------------------------
+// Size
+// Width by Height, accepts all units.
+@mixin size($size) {
+  $width: nth($size, 1);
+  $height: $width;
+
+  @if length($size) > 1 {
+    $height: nth($size, 2);
+  }
+
+  @if $height == auto or (type-of($height) == number and not unitless($height)) {
+    height: $height;
+  }
+
+  @if $width == auto or (type-of($width) == number and not unitless($width)) {
+    width: $width;
+  }
+}
+// -----------------------------------------------------------------------------
+// Position
+@mixin position($position: relative, $coordinates: null null null null, $block: false) {
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+
+  $coordinates: extract($coordinates);
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if ($block) {
+    display: block;
+  }
+
+  position: $position;
+
+  @if ($top and $top == auto) or (type-of($top) == number) {
+    top: $top;
+  }
+
+  @if ($right and $right == auto) or (type-of($right) == number) {
+    right: $right;
+  }
+
+  @if ($bottom and $bottom == auto) or (type-of($bottom) == number) {
+    bottom: $bottom;
+  }
+
+  @if ($left and $left == auto) or (type-of($left) == number) {
+    left: $left;
+  }
+}

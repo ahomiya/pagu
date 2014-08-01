@@ -1,0 +1,31 @@
+<VirtualHost *:80>
+  ServerName lpagu.SLD.TLD
+
+  # This should be omitted in the production environment
+  SetEnv APPLICATION_ENV development
+
+  DocumentRoot /var/www/pagu/htdocs/
+
+  ErrorLog /var/log/apache2/lpagu-error_log
+  CustomLog /var/log/apache2/lpagu-access_log combined
+  php_value error_log /var/log/apache2/lpagu-phperror_log
+
+	php_value date.timezone UTC
+	php_value mbstring.language Neutral
+	php_value mbstring.internal_encoding UTF-8
+	#php_value mbstring.encoding_translation On
+	php_value mbstring.http_input auto
+	php_value mbstring.http_output UTF-8
+	php_value mbstring.detect_order auto
+	php_value mbstring.substitute_character none
+	php_value default_charset UTF-8
+
+
+  <Directory "/var/www/pagu/htdocs/">
+    EnableSendfile Off
+    Options FollowSymLinks
+    AllowOverride All
+    Allow from All
+  </Directory>
+
+</VirtualHost>
