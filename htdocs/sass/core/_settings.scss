@@ -25,6 +25,10 @@
 // Configurable variables
 // Declar variables that can beused throughout stylesheets.
 // -----------------------------------------------------------------------------
+// Development
+$dev-approach           : mobile;   // Mobile first
+
+
 // Fonts
 $font-style-regular     : Font-Regular;
 $font-style-bold        : Font-Bold;
@@ -50,7 +54,6 @@ $grid-width-large       : 1280px;
   $grid-width-medium    : 100%;
   $grid-width-large     : 100%;
 }
-
 
 $grid-padding-small     : 15px;     // Base
 $grid-padding-medium    : 20px;
