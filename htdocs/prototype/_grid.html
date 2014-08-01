@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grid system · パグ (Pagu)</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- Utilities -->
+    <script src="../js/vendor/modernizr.min.js"></script>
+  </head>
+  <body>
+    <h1>Grid system</h1>
+
+    <div class="container">
+
+      <h2>Basic .row and .col-</h2>
+      <br>
+      <div class="row">
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-2"><div class="inner">Col-2</div></div>
+        <div class="col-2"><div class="inner">Col-2</div></div>
+        <div class="col-2"><div class="inner">Col-2</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-5"><div class="inner">Col-5</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-2"><div class="inner">Col-2</div></div>
+        <div class="col-4"><div class="inner">Col-4</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-3"><div class="inner">Col-3</div></div>
+        <div class="col-3"><div class="inner">Col-3</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-4"><div class="inner">Col-4</div></div>
+        <div class="col-2"><div class="inner">Col-2</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-5"><div class="inner">Col-5</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+      </div>
+      <br>
+
+      <div class="row">
+        <div class="col-6"><div class="inner">Col-6</div></div>
+      </div>
+      <br>
+
+      <h2>Nesting</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="row">
+            <div class="col-3"><div class="inner">Col-6</div></div>
+            <div class="col-3"><div class="inner">Col-6</div></div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="row">
+            <div class="col-1"><div class="inner">Col-1</div></div>
+            <div class="col-1"><div class="inner">Col-1</div></div>
+            <div class="col-1"><div class="inner">Col-1</div></div>
+            <div class="col-1"><div class="inner">Col-1</div></div>
+            <div class="col-1"><div class="inner">Col-1</div></div>
+            <div class="col-1"><div class="inner">Col-1</div></div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <h2>Offset</h2>
+      <div class="row">
+        <div class="col-2"><div class="inner">Col-2</div></div>
+        <div class="col-2 offset-2"><div class="inner">Col-2</div></div>
+      </div>
+      <br>
+
+      <h2>Collapsed rows</h2>
+      <div class="row-collapse">
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+        <div class="col-1"><div class="inner">Col-1</div></div>
+      </div>
+      <br>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/tracking.js"></script>
+  </body>
+</html>

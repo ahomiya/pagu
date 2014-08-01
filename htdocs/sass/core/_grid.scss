@@ -1,0 +1,126 @@
+// GRID SYSTEM
+// A structure made up of a series of intersecting guide lines used to
+// structure content.
+// -----------------------------------------------------------------------------
+
+// Small screens
+// Foundation settings
+$row-width			: $grid-width-small;     // Row width
+$column-gutter	: $grid-gutter-small;    // Column gutter
+$total-columns	: $grid-column-small;    // Total column
+
+// Custom settings
+$row-padding		: $grid-padding-small;   // Row padding
+
+// Container
+.container {
+	margin: 0 auto;
+	width: $row-width;
+}
+
+// Rows
+.row {
+  @include grid-row();
+
+  padding-left: $row-padding;
+  padding-right: $row-padding;
+  position: relative;
+
+  .row {
+    @include grid-row($behavior: nest);
+    @include grid-padding(0);
+  }
+}
+.row-collapse {
+  @include grid-row($behavior: collapse);
+}
+
+// Columns
+%grid-column {
+  @include grid-column($columns: $total-columns, $float: flase);
+}
+@for $i from 1 through $total-columns {
+	.col-#{$i} { @extend %grid-column; }
+}
+// -----------------------------------------------------------------------------
+// Medium screens
+@media only screen and (min-width: $grid-breakpoint-medium) {
+
+// Foundation settings
+$row-width			: $grid-width-medium;    // Row width
+$column-gutter	: $grid-gutter-medium;   // Column gutter
+$total-columns	: $grid-column-medium;   // Total column
+
+// Custom settings
+$row-padding		: $grid-padding-medium;  // Row padding
+
+// Container
+.container { width: $row-width; }
+
+// Rows
+.row {
+  @include grid-row();
+
+  padding-left: $row-padding;
+  padding-right: $row-padding;
+
+  .row {
+    @include grid-row($behavior: nest);
+    @include grid-padding(0);
+  }
+}
+
+// Columns
+@for $i from 1 through $total-columns {
+	.col-#{$i} { @include grid-column($columns: $i); }
+}
+
+// Column offset
+@for $i from 1 through $total-columns {
+	.offset-#{$i} {
+		margin-left: gridCalc($colNumber: $i, $totalColumns: $total-columns);
+	}
+}
+
+}
+// -----------------------------------------------------------------------------
+// Large screens
+@media only screen and (min-width: $grid-breakpoint-large) {
+
+// Foundation settings
+$row-width			: $grid-width-large;     // Row width
+$column-gutter	: $grid-gutter-large;    // Column gutter
+$total-columns	: $grid-column-large;    // Total column
+
+// Custom settings
+$row-padding		: $grid-padding-large;   // Row padding
+
+// Container
+.container { width: $row-width; }
+
+// Rows
+.row {
+  @include grid-row();
+
+  padding-left: $row-padding;
+  padding-right: $row-padding;
+
+  .row {
+    @include grid-row($behavior: nest);
+    @include grid-padding(0);
+  }
+}
+
+// Columns
+@for $i from 1 through $total-columns {
+	.col-#{$i} { @include grid-column($columns: $i); }
+}
+
+}
+
+.container {
+  background: skyblue;
+}
+.inner {
+  background: pink;
+}

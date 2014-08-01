@@ -9,3 +9,9 @@
 // Mixins
 // Define patterns of property value pairs, which can then be reused in
 // other rulesets.
+
+// Grid padding
+@mixin grid-padding($padding: 0) {
+  padding-left: $padding;
+  padding-right: $padding;
+}

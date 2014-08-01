@@ -4,7 +4,7 @@
  * Type                               : Website
  * CSS preprocessor                   : SASS
  * CSS architecture                   : SMACSS, MVCSS, OOCSS
- * CSS authoring frameworks           : Compass, Sukiyaki
+ * CSS authoring frameworks           : Compass, Foundation, Sukiyaki
  * CSS resets, normalize              : Reset.css, Normalize.css
  * JS features detection              : Modernizr
  * Front-end template                 : Onigiri
@@ -24,6 +24,7 @@
 @import "imports";                    // Import configuration settings
 
 @import "compass";                    // Core framework
+@import "foundation/components/grid"; // Grid system framework
 
 @import "vendor/sukiyaki";            // Function and mixin library
 // -----------------------------------------------------------------------------
@@ -34,6 +35,7 @@
 @import "core/helpers";               // Helpers
 @import "core/base";                  // Base-level styles
 @import "core/content";               // Content
+@import "core/grid";                  // Grid
 @import "core/layout";                // Layout
 // -----------------------------------------------------------------------------
 // MODULES

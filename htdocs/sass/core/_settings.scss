@@ -40,16 +40,33 @@ $line-height-base       : 20px;
 
 
 // Grid
-$grid-width-base        : 1280px;
-$grid-width-tablet      : 1024px;
-$grid-padding-base      : 20px;
-$grid-padding-tablet    : 15px;
-$grid-gutter-base       : 40px;
-$grid-gutter-tablet     : 30px;
-$grid-column-base       : 6;
-$grid-column-tablet     : 6;
-$grid-breakpoint-desktop: 1280px;
-$grid-breakpoint-tablet : 1279px;
+$grid-fluid             : false;
+
+$grid-width-small       : 100%;     // Base
+$grid-width-medium      : 768px;
+$grid-width-large       : 1280px;
+
+@if $grid-fluid {
+  $grid-width-medium    : 100%;
+  $grid-width-large     : 100%;
+}
+
+
+$grid-padding-small     : 15px;     // Base
+$grid-padding-medium    : 20px;
+$grid-padding-large     : 30px;
+
+$grid-gutter-small      : 15px;     // Base
+$grid-gutter-medium     : 20px;
+$grid-gutter-large      : 30px;
+
+$grid-column-small      : 6;        // Base
+$grid-column-medium     : 6;
+$grid-column-large      : 6;
+
+$grid-breakpoint-small  : 0;
+$grid-breakpoint-medium : 768px;
+$grid-breakpoint-large  : 1280px;
 
 
 // Colors
