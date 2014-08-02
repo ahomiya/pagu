@@ -21,9 +21,7 @@ $row-padding		: $grid-padding-small;   // Row padding
 // Rows
 .row {
   @include grid-row();
-
-  padding-left: $row-padding;
-  padding-right: $row-padding;
+	@include grid-padding($row-padding);
   position: relative;
 
   .row {
@@ -60,9 +58,7 @@ $row-padding		: $grid-padding-medium;  // Row padding
 // Rows
 .row {
   @include grid-row();
-
-  padding-left: $row-padding;
-  padding-right: $row-padding;
+	@include grid-padding($row-padding);
 
   .row {
     @include grid-row($behavior: nest);
@@ -101,9 +97,7 @@ $row-padding		: $grid-padding-large;   // Row padding
 // Rows
 .row {
   @include grid-row();
-
-  padding-left: $row-padding;
-  padding-right: $row-padding;
+	@include grid-padding($row-padding);
 
   .row {
     @include grid-row($behavior: nest);
