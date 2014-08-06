@@ -11,7 +11,7 @@
 // other rulesets.
 
 // Grid padding
-@mixin grid-padding($padding: 0) {
+@mixin grid-padding($padding: $padding) {
   padding-left: $padding;
   padding-right: $padding;
 }
