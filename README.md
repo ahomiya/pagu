@@ -4,7 +4,7 @@
 
 パグ (Pagu) is a breed of dog with a wrinkly, short-muzzled face and curled tail. [Wikipedia](http://en.wikipedia.org/wiki/Pug)
 
-パグ (Pagu) is the web’s most popular front-end template for a creative pug!
+パグ (Pagu) is the web’s most popular front-end template for a creative pug! based on おにぎり ([Onigiri](https://github.com/ahomiya/onigiri)) - a professional front-end template for building scalable and maintainable web apps or sites.
 
 This project is maintained and funded by [ahomiya.com](http://www.ahomiya.com) in Chiang Mai, Thailand.
 
