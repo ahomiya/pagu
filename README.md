@@ -16,6 +16,6 @@ Clone the git repo — `git clone https://github.com/ahomiya/pagu.git`
 
 ## Code Guide (draft)
 
-Standards for developing flexible, durable, and sustainable HTML and CSS.
+Standards for developing flexible, durable, and maintainable HTML, CSS (SCSS), and JavaScript.
 
 * [CSS](https://github.com/ahomiya/pagu/blob/master/doc/codeguide.md)
