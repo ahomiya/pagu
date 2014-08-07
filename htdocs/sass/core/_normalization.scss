@@ -3,3 +3,9 @@
 // To define a consistent foundation across browsers to build the site on.
 // -----------------------------------------------------------------------------
 @import "vendor/reset";
+
+// NORMALIZATION
+// A set of styles provide better cross-browser consistency in the default
+// styling of HTML elements.
+// -----------------------------------------------------------------------------
+@import "vendor/normalize";
