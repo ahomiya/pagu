@@ -1,6 +1,8 @@
 
 # Coding style
 
+Standards for developing flexible, durable, and sustainable HTML and CSS.
+
 ## CSS
 
 Before continuing, you should have a general understanding for specificity, the SCSS syntax.

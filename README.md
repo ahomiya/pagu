@@ -11,6 +11,11 @@ This project is maintained and funded by [ahomiya.com](http://www.ahomiya.com) i
 * Source: [https://github.com/ahomiya/pagu](https://github.com/ahomiya/pagu)
 * Homepage: [http://www.ahomiya.com](http://www.ahomiya.com)
 
-
 ## Quick start
 Clone the git repo — `git clone https://github.com/ahomiya/pagu.git`
+
+## Code Guide (draft)
+
+Standards for developing flexible, durable, and sustainable HTML and CSS.
+
+* [CSS](https://github.com/ahomiya/pagu/blob/master/doc/codeguide.md)
