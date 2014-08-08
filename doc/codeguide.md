@@ -1,8 +1,13 @@
 
 # パグ's Front-end Code Guide
 
-Standards for developing flexible, durable, and maintainable HTML, (S)CSS, and JavaScript.
+Standards for developing flexible, durable, and maintainable HTML, SCSS, and JavaScript.
 
+## HTML
+
+(Draft)
+
+---
 ## SCSS
 
 Before continuing, you should have a general understanding for specificity, the [SCSS](http://www.sass-lang.com) syntax.
@@ -199,6 +204,11 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 ### Micellaneous
 
 * Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
+
+---
+## JavaScript
+
+(Draft)
 
 ---
 Inspired by [GitHub style Guide](https://github.com/styleguide) and [Code Guide by @mdo](http://codeguide.co)
