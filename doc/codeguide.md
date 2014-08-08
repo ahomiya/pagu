@@ -22,7 +22,7 @@ Before continuing, you should have a general understanding for specificity, the 
 * Keep classes as short and succinct as possible but avoid excessive and arbitrary shorthand notation. `.btn` is useful for button, but `.s` doesn't mean anything.
 * Use meaningful names; use structural or purposeful names (semantic) over presentational, e.g., `.navbar-menu {...}`.
 
-```
+```css
 // Not good
 .sidebar {
   .search-box {
@@ -61,7 +61,7 @@ Before continuing, you should have a general understanding for specificity, the 
 * Quote attribute values in selectors, e.g., `input[type="text"]`.
 * Avoid using several attribute selectors, e.g., `[class^="..."]` on commonly occurring components.
 
-```
+```css
 // Not good
 [class^="col-"] {
   float: left;
@@ -90,7 +90,7 @@ Before continuing, you should have a general understanding for specificity, the 
 * End all declarations with a semi-colon, e.g., `.callout { bottom: 3px; position: absolute; }`.
 * Place media queries as close to their relevant rulesets whenever possible. Don't bundle them all in a separate stylesheet or at the end of the document.
 
-```
+```css
 .callout,
 .article,
 .news {
@@ -135,7 +135,7 @@ Before continuing, you should have a general understanding for specificity, the 
 
 * Avoid specifying units for zero values, e.g., `margin: 0;` instead of `margin: 0px;`.
 
-```
+```css
 .accordion {
   border-top: rgba(0,255,255,.5) solid 1px;
   color: #fff;
@@ -153,14 +153,13 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 * Use `// Comment` for comment blocks instead of `/* Comment */`.
 * Be sure to write in complete sentences for larger comments and succinct phrases for general notes.
 
-```
+```css
 // Accordion
 // Displays collapsible content panels for presenting information in
 // a limited amount of space.
 
 .accordion {...}
 ```
-
 
 ### Organization
 * Organize sections of code by component.
