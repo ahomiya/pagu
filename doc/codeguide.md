@@ -211,4 +211,4 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 (Draft)
 
 ---
-Inspired by [GitHub style Guide](https://github.com/styleguide) and [Code Guide by @mdo](http://codeguide.co)
+Inspired by [GitHub styleguide](https://github.com/styleguide) and [Code Guide by @mdo](http://codeguide.co)
