@@ -1,9 +1,9 @@
 
 # パグ's Front-end Code Guide
 
-Standards for developing flexible, durable, and maintainable HTML, CSS (SCSS), and JavaScript.
+Standards for developing flexible, durable, and maintainable HTML, (S)CSS, and JavaScript.
 
-## CSS
+## SCSS
 
 Before continuing, you should have a general understanding for specificity, the [SCSS](http://www.sass-lang.com) syntax.
 
@@ -143,6 +143,9 @@ Before continuing, you should have a general understanding for specificity, the 
   text-shadow: 1px 1px #ff00aa, -2px -2px rgba(255,255,255,1);
   -webkit-transition: width 2s;
           transition: width 2s;
+   -webkit-transform: rotate(7deg);
+       -ms-transform: rotate(7deg);
+           transform: rotate(7deg);
 }
 ```
 
@@ -159,6 +162,19 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 // a limited amount of space.
 
 .accordion {...}
+
+
+// Datepicker
+// Select a date from a popup or inline calendar
+
+.datepicker {...}
+
+
+// Dropdowns
+// Toggleable, contextual menu for displaying lists of links.
+// Made interactive with the dropdown JavaScript plugin.
+
+.dropdown {...}
 ```
 
 ### Organization
@@ -171,9 +187,5 @@ Code is written and maintained by people. Ensure your code is descriptive, well 
 
 * Avoid unnecessary nesting. Just because you can nest, doesn't mean you always should. Consider nesting only if you must scope styles to a parent and if there are multiple elements to be nested. If you cannot help it, step back and rethink your overall strategy (either the specificity needed, or the layout of the nesting).
 
-### Contributors
-* [Prakarangs](https://github.com/prakarangs)
-
-### References
-* [GitHub style Guide](https://github.com/styleguide)
-* [Code Guide by @mdo](http://codeguide.co)
+---
+Inspired by [GitHub style Guide](https://github.com/styleguide) and [Code Guide by @mdo](http://codeguide.co)
