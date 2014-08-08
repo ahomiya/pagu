@@ -99,7 +99,7 @@ Before continuing, you should have a general understanding for specificity, the 
   width: 100%;
   z-index: 1;
   
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: $grid-breakpoint-tablet) {
     font-size: 14px;
     width: 80%;
   }
@@ -108,6 +108,19 @@ Before continuing, you should have a general understanding for specificity, the 
 .sidebar {
   color: #333;
   display: block;
+  
+  @media only screen and (min-width: $grid-breakpoint-desktop) {
+    font-family: $font-style-weight;
+    line-height: 30px;
+  }
+  
+  #{$browser-ie-08} {
+    margin-right: 1px;
+  }
+  
+  #{$device-touch} {
+    @include button-hover;
+  }
 }
 
 .clearfix { @include clearfix; }
