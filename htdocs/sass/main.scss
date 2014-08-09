@@ -29,6 +29,8 @@
 @import "vendor/sukiyaki";            // Function and mixin library
 // -----------------------------------------------------------------------------
 // CORE
+// Represents the tools and materials required at the ground level of a project.
+// It provides the initial setup for an application.
 
 @import "core/settings";              // Settings
 @import "core/helpers";               // Helpers
@@ -36,8 +38,13 @@
 @import "core/base";                  // Base-level styles
 @import "core/utilities";             // Utilities
 @import "core/content";               // Content
-@import "core/grid";                  // Grid
-@import "core/layout";                // Layout
+// -----------------------------------------------------------------------------
+// STRUCTURE
+// A project’s UI elements that are too specialized for use across
+// multiple sites.
+
+@import "structure/grid";             // Grid
+@import "structure/layout";           // Layout
 // -----------------------------------------------------------------------------
 // MODULES
 
