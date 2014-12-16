@@ -46,11 +46,10 @@
 @import "structure/grid";             // Grid
 @import "structure/layout";           // Layout
 // -----------------------------------------------------------------------------
-// MODULES
+// COMPONENTS
 
-@import "modules/modules";            // Modules
-@import "modules/widgets";            // Widgets
-@import "modules/components";         // Components
+@import "components/components";      // Components
+@import "components/widgets";         // Widgets
 // -----------------------------------------------------------------------------
 // PAGES
 
