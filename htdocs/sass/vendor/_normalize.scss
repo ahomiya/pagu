@@ -1,5 +1,5 @@
 // normalize.css
-// v3.0.1
+// v3.0.2
 // MIT License | git.io/normalize
 
 // 1. Set default font family to sans-serif.
@@ -10,8 +10,33 @@ html {
   -webkit-text-size-adjust: 100%; // 2
       -ms-text-size-adjust: 100%; // 2
 }
+
+// Remove default margin.
+body { margin: 0; }
+
 // -----------------------------------------------------------------------------
 // HTML5 display definitions
+
+// Correct `block` display not defined for any HTML5 element in IE 8/9.
+// Correct `block` display not defined for `details` or `summary` in IE 10/11
+// and Firefox.
+// Correct `block` display not defined for `main` in IE 11.
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
 
 // 1. Correct `inline-block` display not defined in IE 8/9.
 // 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
@@ -36,16 +61,18 @@ audio:not([controls]) {
 template {
   display: none;
 }
+
 // -----------------------------------------------------------------------------
 // Links
 // Remove the gray background color from active links in IE 10.
-a { background: transparent; }
+a { background-color: transparent; }
 
 // Improve readability when focused and also mouse hovered in all browsers.
 a:active,
 a:hover {
   outline: 0;
 }
+
 // -----------------------------------------------------------------------------
 // Text-level semantics
 // Address styling not present in IE 8/9/10/11, Safari, and Chrome.
@@ -88,23 +115,26 @@ sup {
 sup { top: -0.5em; }
 
 sub { bottom: -0.25em; }
+
 // -----------------------------------------------------------------------------
 // Embedded content
 // Remove border when inside `a` element in IE 8/9/10.
 
+img { border: 0; }
+
 // Correct overflow not hidden in IE 9/10/11.
-svg:not(:root) {
-  overflow: hidden;
-}
+svg:not(:root) { overflow: hidden; }
+
 // -----------------------------------------------------------------------------
 // Grouping content
 // Address margin not present in IE 8/9 and Safari.
+
 figure { margin: 1em 40px; }
 
 // Address differences between Firefox and other browsers.
 hr {
   -moz-box-sizing: content-box;
-       box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
@@ -119,6 +149,7 @@ samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
+
 // -----------------------------------------------------------------------------
 // Forms
 
@@ -140,9 +171,7 @@ textarea {
 }
 
 // Address `overflow` set to `hidden` in IE 8/9/10/11.
-button {
-  overflow: visible;
-}
+button { overflow: visible; }
 
 // Address inconsistent `text-transform` inheritance for `button` and `select`.
 // All other form control elements do not inherit `text-transform` values.
@@ -158,6 +187,7 @@ select {
 // 2. Correct inability to style clickable `input` types in iOS.
 // 3. Improve usability and consistency of cursor style between image-type
 //    `input` and others.
+
 button,
 html input[type="button"],    // 1
 input[type="reset"],
@@ -240,14 +270,16 @@ textarea { overflow: auto; }
 // Don't inherit the `font-weight` (applied by a rule above).
 // NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
 optgroup { font-weight: bold; }
+
 // -----------------------------------------------------------------------------
 // Tables
 
 // Remove most spacing between table cells.
-// table {
-//   border-collapse: collapse;
-//   border-spacing: 0;
-// }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 
 td,
 th {

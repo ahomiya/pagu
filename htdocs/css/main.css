@@ -99,6 +99,26 @@ html {
   -ms-text-size-adjust: 100%;
 }
 
+body {
+  margin: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
 audio,
 canvas,
 progress,
@@ -118,7 +138,7 @@ template {
 }
 
 a {
-  background: transparent;
+  background-color: transparent;
 }
 
 a:active,
@@ -167,6 +187,10 @@ sup {
 
 sub {
   bottom: -0.25em;
+}
+
+img {
+  border: 0;
 }
 
 svg:not(:root) {
@@ -277,6 +301,11 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 td,
