@@ -29,6 +29,7 @@ Clone the git repo — `git clone https://github.com/ahomiya/pagu.git`
 * Includes [Wasabi](https://github.com/ahomiya/wasabi) — a collection of useful jQuery utilities.
 * Includes jQuery browser and OS detection plugin.
 * Useful SCSS helpers based on [HTML5 Boilerplate](https://github.com/h5bp/html5-boilerplate).
+* Includes [EditorConfig](http://editorconfig.org) — it helps developers define and maintain consistent coding styles between different editors and IDEs.
 
 ## Documentation
 
