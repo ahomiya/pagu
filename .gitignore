@@ -1,5 +1,8 @@
 # Not shared Application-Folder/Files #
 
+# Node Module & Vendor #
+node_modules
+vendor/package
 # Common #
 *~
 ._*
