@@ -7,7 +7,7 @@
     "url": "https://github.com/ahomiya/pagu.git"
   },
   "author": "Arm, Kookai, Kaowfang",
-  "license": "Theerawat",
+  "license": "Ahomiya",
   "homepage": "https://github.com/ahomiya/pagu",
   "devDependencies": {
     "gulp": "3.8.11",
