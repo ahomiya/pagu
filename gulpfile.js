@@ -8,11 +8,15 @@ var gulp        = require('gulp'),
 // Objects Path
 var htdocs = {
   js: {
-    custom        : './htdocs/js/',
-    vendor        : './htdocs/js/vendor'
+    custom          : './htdocs/js/',
+    vendor          : './htdocs/js/vendor'
   },
   sass: {
-    vendor        : './htdocs/sass/vendor/'
+    vendor          : './htdocs/sass/vendor/'
+  },
+  framework: {
+    zurbFoundation  : './htdocs/sass/vendor/zurb_foundation',
+    componentMixins : './htdocs/sass/vendor/zurb_foundation/foundation/components'
   }
 };
 
@@ -41,7 +45,21 @@ var packages = {
   // Mayer reset
   css_reset: [
     './vendor/package/meyer-reset/stylesheets/_meyer-reset.scss'
-  ]
+  ],
+
+  // Zurb Foundation 5
+  framework: {
+    import_components: [
+      './vendor/package/foundation/scss/foundation.scss'
+    ],
+    core: [
+      './vendor/package/foundation/scss/foundation/*'
+    ],
+    mixin: [
+      './vendor/package/foundation/scss/foundation/components/_global.scss',
+      './vendor/package/foundation/scss/foundation/components/_grid.scss'
+    ]
+  }
 };
 
 // -----------------------------------------------------------------------------
@@ -80,7 +98,24 @@ gulp.task('css-reset', function() {
    .pipe(gulp.dest(htdocs.sass.vendor))
 });
 
+gulp.task('foundation_import', function() {
+  gulp.src(packages.framework.import_components)
+    .pipe(rename({prefix   : '_'}))
+    .pipe(gulp.dest(htdocs.framework.zurbFoundation));
+});
 
+gulp.task('foundation5', function() {
+  gulp.src(packages.framework.core)
+    .pipe(rename({
+      dirname : 'foundation/'
+    }))
+    .pipe(gulp.dest(htdocs.framework.zurbFoundation));
+});
+
+gulp.task('foundation_mixins', function() {
+  gulp.src(packages.framework.mixin)
+    .pipe(gulp.dest(htdocs.framework.componentMixins));
+});
 
 gulp.task('default',
   [
@@ -88,7 +123,10 @@ gulp.task('default',
     'library',
     'normalize',
     'sukiyaki',
-    'css-reset'
+    'css-reset',
+    'foundation_import',
+    'foundation5',
+    'foundation_mixins'
   ]
 );
 

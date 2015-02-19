@@ -74,7 +74,7 @@ $row-padding		: $grid-padding-medium;  // Row padding
 // Column offset
 @for $i from 1 through $total-columns {
 	.offset-#{$i} {
-		margin-left: gridCalc($colNumber: $i, $totalColumns: $total-columns);
+		margin-left: grid-calc($colNumber: $i, $totalColumns: $total-columns);
 	}
 }
 
