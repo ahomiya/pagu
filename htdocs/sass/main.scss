@@ -24,7 +24,7 @@
 @import "imports";                    // Import configuration settings
 
 @import "compass";                    // Core framework
-@import "vendor/zurb_foundation/foundation"; // Import foundation
+@import "vendor/zurb_foundation/foundation/components/grid"; // Import foundation
 //@import "foundation/components/grid"; // Grid system framework
 
 @import "vendor/sukiyaki";            // Function and mixin library

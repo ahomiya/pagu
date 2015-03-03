@@ -719,6 +719,36 @@ th {
   float: none;
 }
 
+.col-1 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-2 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-3 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-4 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-5 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+.col-6 {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -760,6 +790,8 @@ th {
     padding-right: 7.5px;
     width: 16.66667%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-2 {
@@ -767,6 +799,8 @@ th {
     padding-right: 7.5px;
     width: 33.33333%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-3 {
@@ -774,6 +808,8 @@ th {
     padding-right: 7.5px;
     width: 50%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-4 {
@@ -781,6 +817,8 @@ th {
     padding-right: 7.5px;
     width: 66.66667%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-5 {
@@ -788,6 +826,8 @@ th {
     padding-right: 7.5px;
     width: 83.33333%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .col-6 {
@@ -795,30 +835,44 @@ th {
     padding-right: 7.5px;
     width: 100%;
     float: left;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-1 {
     margin-left: 16.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-2 {
     margin-left: 33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-3 {
     margin-left: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-4 {
     margin-left: 66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-5 {
     margin-left: 83.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .offset-6 {
     margin-left: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -862,6 +916,8 @@ th {
     padding-right: 7.5px;
     width: 16.66667%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-2 {
@@ -869,6 +925,8 @@ th {
     padding-right: 7.5px;
     width: 33.33333%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-3 {
@@ -876,6 +934,8 @@ th {
     padding-right: 7.5px;
     width: 50%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-4 {
@@ -883,6 +943,8 @@ th {
     padding-right: 7.5px;
     width: 66.66667%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-5 {
@@ -890,6 +952,8 @@ th {
     padding-right: 7.5px;
     width: 83.33333%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .col-6 {
@@ -897,6 +961,8 @@ th {
     padding-right: 7.5px;
     width: 100%;
     float: left;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .container {
