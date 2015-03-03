@@ -1,0 +1,19 @@
+// Size
+// Width by Height, accepts all units.
+
+@mixin size($size) {
+  $width: nth($size, 1);
+  $height: $width;
+
+  @if length($size) > 1 {
+    $height: nth($size, 2);
+  }
+
+  @if $height == auto or (type-of($height) == number and not unitless($height)) {
+    height: $height;
+  }
+
+  @if $width == auto or (type-of($width) == number and not unitless($width)) {
+    width: $width;
+  }
+}

@@ -38,7 +38,11 @@ $row-padding		: $grid-padding-small;   // Row padding
   @include grid-column($columns: $total-columns, $float: flase);
 }
 @for $i from 1 through $total-columns {
-	.col-#{$i} { @extend %grid-column; }
+	.col-#{$i} {
+    @extend %grid-column;
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
 }
 // -----------------------------------------------------------------------------
 // Medium screens
@@ -68,13 +72,19 @@ $row-padding		: $grid-padding-medium;  // Row padding
 
 // Columns
 @for $i from 1 through $total-columns {
-	.col-#{$i} { @include grid-column($columns: $i); }
+	.col-#{$i} {
+    @include grid-column($columns: $i);
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
 }
 
 // Column offset
 @for $i from 1 through $total-columns {
 	.offset-#{$i} {
-		margin-left: gridCalc($colNumber: $i, $totalColumns: $total-columns);
+		margin-left: grid-calc($colNumber: $i, $totalColumns: $total-columns);
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
 	}
 }
 
@@ -107,10 +117,15 @@ $row-padding		: $grid-padding-large;   // Row padding
 
 // Columns
 @for $i from 1 through $total-columns {
-	.col-#{$i} { @include grid-column($columns: $i); }
+	.col-#{$i} {
+    @include grid-column($columns: $i);
+    padding-left: $column-gutter / 2;
+    padding-right: $column-gutter / 2;
+  }
 }
 
 }
+
 
 .container {
   background: skyblue;

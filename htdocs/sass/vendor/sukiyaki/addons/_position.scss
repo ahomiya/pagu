@@ -1,0 +1,35 @@
+// Position
+@mixin position($position: relative, $coordinates: null null null null, $block: false) {
+  @if type-of($position) == list {
+    $coordinates: $position;
+    $position: relative;
+  }
+
+  $coordinates: extract($coordinates);
+  $top: nth($coordinates, 1);
+  $right: nth($coordinates, 2);
+  $bottom: nth($coordinates, 3);
+  $left: nth($coordinates, 4);
+
+  @if ($block) {
+    display: block;
+  }
+
+  position: $position;
+
+  @if ($top and $top == auto) or (type-of($top) == number) {
+    top: $top;
+  }
+
+  @if ($right and $right == auto) or (type-of($right) == number) {
+    right: $right;
+  }
+
+  @if ($bottom and $bottom == auto) or (type-of($bottom) == number) {
+    bottom: $bottom;
+  }
+
+  @if ($left and $left == auto) or (type-of($left) == number) {
+    left: $left;
+  }
+}

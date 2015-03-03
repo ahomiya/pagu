@@ -33,7 +33,51 @@ Clone the git repo — `git clone https://github.com/ahomiya/pagu.git`
 
 ## Documentation
 
-coming soon...
+### Installation of gulp
+
+To be able to install gulp on local, Node.js is needed so make sure you have node installed before installing gulp.
+
+#### 1. Install gulp globally:
+
+
+```sh
+$ npm install --global gulp
+```
+
+#### 2. Install gulp in your project devDependencies:
+
+
+```sh
+$ npm install --save-dev gulp
+```
+
+(The Installation of gulp in all new project directory is mandatory.)
+
+### Install Gulp plugin
+
+To install gulp plugin please run
+
+```sh
+$ npm install
+```
+
+### Install Bower packages
+
+```sh
+$ bower install
+```
+
+### To add new libraries to project
+
+* Download package via bower
+
+```sh
+$ bower install --save <package_name>
+```
+
+* Edit gulpfile.js to copy library files to project
+
+
 
 ## Contributing
 

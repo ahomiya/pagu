@@ -1,0 +1,17 @@
+{
+  "name": "pagu",
+  "version": "1.0.0",
+  "description": "[![Pagu](https://raw.githubusercontent.com/ahomiya/pagu/master/doc/img/pagu.png)](https://github.com/ahomiya/pagu)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahomiya/pagu.git"
+  },
+  "author": "Arm, Kookai, Kaowfang",
+  "license": "Ahomiya",
+  "homepage": "https://github.com/ahomiya/pagu",
+  "devDependencies": {
+    "gulp": "3.8.11",
+    "gulp-concat": "2.5.0",
+    "gulp-rename": "1.2.0"
+  }
+}
