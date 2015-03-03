@@ -67,30 +67,30 @@ var packages = {
 
 // Feature detection
 gulp.task('features', function() {
-  gulp.src(packages.features)
+  return gulp.src(packages.features)
     .pipe(concat('features.js'))
     .pipe(gulp.dest(htdocs.js.vendor));
 });
 
 // JavaScript libraries
 gulp.task('library', function() {
-  gulp.src(packages.jsLibraries)
+  return gulp.src(packages.jsLibraries)
     .pipe(concat('libraries.js'))
     .pipe(gulp.dest(htdocs.js.vendor));
 });
 
 gulp.task('normalize', function() {
-  gulp.src(packages.normalize)
+  return gulp.src(packages.normalize)
     .pipe(gulp.dest(htdocs.sass.vendor));
 });
 
 gulp.task('sukiyaki', function() {
-  gulp.src(packages.sukiyaki)
+  return gulp.src(packages.sukiyaki)
     .pipe(gulp.dest(htdocs.sass.vendor));
 });
 
 gulp.task('css-reset', function() {
-  gulp.src(packages.css_reset)
+  return gulp.src(packages.css_reset)
     .pipe(rename({
       prefix   : '_',
       basename : 'reset'
@@ -99,13 +99,13 @@ gulp.task('css-reset', function() {
 });
 
 gulp.task('foundation_import', function() {
-  gulp.src(packages.framework.import_components)
+  return gulp.src(packages.framework.import_components)
     .pipe(rename({prefix   : '_'}))
     .pipe(gulp.dest(htdocs.framework.zurbFoundation));
 });
 
 gulp.task('foundation5', function() {
-  gulp.src(packages.framework.core)
+  return gulp.src(packages.framework.core)
     .pipe(rename({
       dirname : 'foundation/'
     }))
@@ -113,7 +113,7 @@ gulp.task('foundation5', function() {
 });
 
 gulp.task('foundation_mixins', function() {
-  gulp.src(packages.framework.mixin)
+  return gulp.src(packages.framework.mixin)
     .pipe(gulp.dest(htdocs.framework.componentMixins));
 });
 
