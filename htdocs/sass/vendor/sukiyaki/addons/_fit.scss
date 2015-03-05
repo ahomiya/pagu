@@ -1,0 +1,16 @@
+// Fit container
+@mixin fit($dimension: block, $size: 100%, $block: true) {
+  @if ($block) {
+    display: block;
+  }
+
+  @if ($dimension == block) {
+    height: 100%;
+    width: 100%;
+  }
+
+  @if ($dimension == height) {
+    height: $size;
+    line-height: $size;
+  }
+}
