@@ -7,19 +7,19 @@
 // Regular
 @include font-face(
   "Font-Regular",
-  font-files("Font-Regular.ttf")
+  font-files("Caviar.Dreams-Regular.ttf")
 );
 
 // Bold
 @include font-face(
   "Font-Bold",
-  font-files("Font-Bold.ttf")
+  font-files("Caviar.Dreams-Bold.ttf")
 );
 
 // Italic
 @include font-face(
   "Font-Italic",
-  font-files("Font-Italic.ttf")
+  font-files("Caviar.Dreams-Italic.ttf")
 );
 // -----------------------------------------------------------------------------
 // Configurable variables
@@ -34,6 +34,8 @@ $font-style-regular     : Font-Regular;
 $font-style-bold        : Font-Bold;
 $font-style-light       : Font-Light;
 $font-style-italic      : Font-Italic;
+
+$font-family-websafe    : Arial, Helvetica, sans-serif;
 
 $font-style-base        : $font-style-regular;
 $font-size-base         : 16px;
@@ -88,9 +90,9 @@ $bkg-color-highlight    : #bbb;
 
 
 // Links
-$link-color-normal      : #fff;
-$link-color-hover       : #fff;
-$link-color-active      : #fff;
+$link-color-normal      : #666;
+$link-color-hover       : #000;
+$link-color-active      : #000;
 $link-bkg-normal        : #fff;
 $link-bkg-hover         : #fff;
 $link-bkg-active        : #fff;

@@ -15,3 +15,8 @@
   padding-left: $padding;
   padding-right: $padding;
 }
+
+// Inline-block container
+@mixin inlineblock-container {
+  font-size: 0;
+}
