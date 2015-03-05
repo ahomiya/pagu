@@ -5,10 +5,10 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     rename      = require('gulp-rename'),
     concat      = require('gulp-concat'),
-    browserSync = require('browser-sync'),
-    reload      = browserSync.reload,
-    devUrl      = 'lpagu.buzzwoo.de';
-    
+    browserSync = require('browser-sync');
+    // reload      = browserSync.reload,
+    // devUrl      = 'lpagu.buzzwoo.de';
+
 // -----------------------------------------------------------------------------
 // Objects Path
 var htdocs = {
@@ -16,7 +16,7 @@ var htdocs = {
     site            : './htdocs/*.html'
   },
   css : {
-    main            : './htdocs/css'          
+    main            : './htdocs/css'
   },
   js: {
     custom          : './htdocs/js/main.js',
@@ -139,20 +139,24 @@ gulp.task('sass', function() {
       indentedSyntax: true,
       errLogToConsole: true
     }))
-    .pipe(gulp.dest(htdocs.css.main))
-    .pipe(reload({stream: true}));
+    .pipe(gulp.dest(htdocs.css.main));
+    //.pipe(reload({stream: true}));
+});
+
+gulp.task('watch', function() {
+  gulp.watch(htdocs.sass.all, ['sass']);
 });
 
 //  BrowserSync Tasks
 // start browser-sync with proxy to our local dev url
-gulp.task('browser-sync', function() {
-  browserSync({
-    proxy: devUrl
-  });
-  gulp.watch(htdocs.sass.all, ['sass']);
-  gulp.watch(htdocs.page.site).on('change', reload);
-  gulp.watch(htdocs.js.custom).on('change', reload);
-});
+// gulp.task('browser-sync', function() {
+//   browserSync({
+//     proxy: devUrl
+//   });
+//   gulp.watch(htdocs.sass.all, ['sass']);
+//   gulp.watch(htdocs.page.site).on('change', reload);
+//   gulp.watch(htdocs.js.custom).on('change', reload);
+// });
 
 // -----------------------------------------------------------------------------
 // Gulp Call by default
@@ -167,7 +171,8 @@ gulp.task('default',
     'foundation_import',
     'foundation5',
     'foundation_mixins',
-    'browser-sync'
+    'watch'
+    //'browser-sync'
   ]
 );
 

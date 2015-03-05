@@ -9,7 +9,7 @@
 // an object rather than as an addition.
 * {
   &, &:before, &:after {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
   }
 }
 

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /**
  * Project                            : Pagu
  * Type                               : Website
@@ -22,7 +21,6 @@
 // CSS authoring framework
 // Streamlines development by providing a number of utilities and tools
 // to make writing CSS files easier and faster.
-@import "compass";                    // Compass
 
 // Function and mixin libraries
 @import "vendor/sukiyaki";            // Sukiyaki
@@ -30,7 +28,7 @@
 // Front-end frameworks
 // A collection of tools for creating websites and web applications.
 @import "vendor";                     // Overriding
-@import "foundation/components/grid"; // Grid system framework
+@import "vendor/zurb_foundation/foundation/components/grid"; // Import foundation
 // -----------------------------------------------------------------------------
 // CORE
 // Represents the tools and materials required at the ground level of a project.
