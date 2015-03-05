@@ -133,7 +133,7 @@ gulp.task('foundation_mixins', function() {
 
 // Running gulp-sass based on Node-sass
 gulp.task('sass', function() {
-  gulp.src(htdocs.sass.all)
+  return gulp.src(htdocs.sass.all)
     .pipe(sass({
       includePaths: require('node-sass').includePaths,
       indentedSyntax: true,
@@ -144,7 +144,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(htdocs.sass.all, ['sass']);
+  return gulp.watch(htdocs.sass.all, ['sass']);
 });
 
 //  BrowserSync Tasks
